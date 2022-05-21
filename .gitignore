@@ -2,5 +2,9 @@
 /shelf/
 /.idea/workspace.xml
 .idea
-.env.prod
-config.yaml.prod
+.env
+config.yaml
+.nox
+tfl_stop_points.cache
+__pycache__
+poetry.lock

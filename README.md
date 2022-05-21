@@ -22,7 +22,7 @@ tube_time_bonus: -5
 
 # Define destinations. 
 destinations:
-  # define a destination. This will be set up as an endpoint on the server under <host>/goto/<destination>
+  # define a destination. This will be set up as an endpoint on the server under <host>/goto_london_sss/<destination>
   - kgx:
     bus_number: 390
     bus_from_stop_id: 73053  # Carleton Road

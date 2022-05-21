@@ -1,13 +1,25 @@
 [tool.poetry]
-name = "goto_sss"
+name = "goto_london_sss"
 version = "0.1.0"
 description = ""
 authors = ["Chris Watkins <chris.watkins93@gmail.com>"]
 
+[tool.poetry.scripts]
+get_stop_points = "goto_london_sss.stop_point_cacher:load_or_generate_cache"
+
 [tool.poetry.dependencies]
 python = "^3.9"
+requests = "^2.27.1"
+python-dotenv = "^0.20.0"
+PyYAML = "^6.0"
+nox = "^2022.1.7"
 
 [tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+flake8-black = "^0.3.3"
+flake8-import-order = "^0.18.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
