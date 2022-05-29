@@ -1,0 +1,19 @@
+<!doctype html>
+<title>GoTo London Results</title>
+<body>
+@@@@@@@@@@@@@@@@@@@@
+<br />
+<b>You should take:</b>
+{{ best_option }}
+<br />
+--------------------
+<br />
+<b>You could also consider taking:</b>
+<br />
+{% for other_option in other_options %}
+    {{ other_option }}
+    <br />
+{% endfor %}
+<br />
+@@@@@@@@@@@@@@@@@@@@
+</body>

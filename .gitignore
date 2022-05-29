@@ -8,3 +8,4 @@ config.yaml
 tfl_stop_points.cache
 __pycache__
 poetry.lock
+.pytest_cache

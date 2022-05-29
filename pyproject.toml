@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "goto_london_sss"
+name = "goto_london"
 version = "0.1.0"
 description = ""
 authors = ["Chris Watkins <chris.watkins93@gmail.com>"]
 
 [tool.poetry.scripts]
-get_stop_points = "goto_london_sss.stop_point_cacher:load_or_generate_cache"
+cacher = "goto_london.stop_point_cacher:main"
+ranker = "goto_london.destination_ranker:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -13,6 +14,10 @@ requests = "^2.27.1"
 python-dotenv = "^0.20.0"
 PyYAML = "^6.0"
 nox = "^2022.1.7"
+arrow = "^1.2.2"
+Flask = "^2.1.2"
+mashumaro = "^3.0.1"
+pytest-mock = "^3.7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
