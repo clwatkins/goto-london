@@ -2,21 +2,19 @@ walk_time_bonus: 3
 bus_time_bonus: 0
 tube_time_bonus: -5
 
-# Define destinations.
 destinations:
-  # define a destination. This will be set up as an endpoint on the server under <host>/goto_london_sss/<destination>
   kgx:
     bus:
       number: 390
-      origin_stop_id: 73053  # Carleton Road
-      destination_stop_id: 76007  # Kings X/St Pancras
-      origin_walking_time: 2  # How long to get to bus stop
-      destination_walking_time: 5  # How long from destination bus stop
+      origin_stop_id: 73053
+      destination_stop_id: 76007
+      origin_walking_time: 2
+      destination_walking_time: 5
     tube:
       line: Northern
       origin_station: Kentish Town
       destination_station: Kings Cross
-      origin_walking_time: 10  # How long to get on tube
-      destination_walking_time: 5  # How long from tube
+      origin_walking_time: 10
+      destination_walking_time: 5
     walk:
       total_time: 30

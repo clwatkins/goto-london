@@ -20,13 +20,6 @@ def install_with_constraints(session, *args, **kwargs):
 
 
 @nox.session(python=["3.9"])
-def tests(session):
-    args = session.posargs or locations
-    install_with_constraints(session, "pytest", "pytest-mock")
-    session.run("pytest", *args)
-
-
-@nox.session(python=["3.9"])
 def lint(session):
     args = session.posargs or locations
     install_with_constraints(

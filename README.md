@@ -6,7 +6,7 @@ It lets you configure a series of destinations and transport modalities, and bas
 
 Instead of a fully-featured journey planner (boo! who wants those?), this takes hard-coded transit options you would consider for a particular destination, and just tells you which to take.
 
-I, for example, can feasibly get to work by walking, bus, or tube (lucky me!). On any given day one of those might be faster/slower based on exactly when I want to leave the house. It also lets me plug my own estimate of exactly how long I need to (comfortably) make it onto any particular transport modality, which I find the "clever" apps still frankly struggle with. 
+I, for example, can feasibly get to work by walking, bus, or tube. On any given day one of those might be faster/slower based on exactly when I want to leave the house. It also lets me plug my own estimate of exactly how long I need to (comfortably) make it onto any particular transport modality, which I find the "clever" apps still frankly struggle with. 
 
 An example, as always, is most illustrative:
 
@@ -45,8 +45,9 @@ destinations:
 - Create a `config.yaml` in the root directory
 - Create a `.env` file containing TFL API keys (follow registration instructions [here](https://api-portal.tfl.gov.uk)): by default `TFL_API_APP_ID`, `TFL_API_APP_KEY`, and `TIMEZONE` are expected
 - Install the app via `poetry install`
-- Run the webapp from root via e.g. `FLASK_APP=goto_london.app FLASK_ENV=development flask run`
+- Activate the env with `poetry shell` & run the webapp via e.g. `FLASK_APP=goto_london.app FLASK_ENV=development flask run`
 - You can run specific components of the system via e.g. `poetry run cacher`, `poetry run ranker`
+- You can lint/format the code with nox -- within the poetry shell run e.g. `nox -rs black`, or test with `pytest`
 
 ## TODO
 
